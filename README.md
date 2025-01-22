@@ -9,15 +9,15 @@
 ### How to Run  
   #### Module 1
     To execute the script, run the following command in a terminal:  
-    ```bash
+    \`\`\`bash
     sh command.sh > entire_output.txt
-    ```
+    \`\`\`
     This will store all output in `entire_output.txt`.  
      or
 
-     ```bash
+    \`\`\`bash
     sh command.sh
-    ```
+    \`\`\`
     This will print all output in terminal. It doesnot create `entire_output.txt`.  
     
     At the end you will be asked weather to erase all footprint or not. 
