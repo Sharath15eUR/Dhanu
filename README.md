@@ -2,9 +2,9 @@
 
 ### Repository Structure 
   **module_1**
-    - **command.sh** – Contains commands for all five questions, with each question labeled by its number.  
-    - **entire_output.txt** – Stores the output of the entire `command.sh` file execution.  
-    - **Q5_output.txt** – Contains only the output of Question 5, as required.  
+    -**command.sh** – Contains commands for all five questions, with each question labeled by its number.  
+    -**entire_output.txt** – Stores the output of the entire `command.sh` file execution.  
+    -**Q5_output.txt** – Contains only the output of Question 5, as required.  
 
 ### How to Run  
   #### Module 1
