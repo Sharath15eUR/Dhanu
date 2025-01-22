@@ -1,0 +1,33 @@
+
+ Question 1 
+
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 22 23:03 file1
+-rwxrwxr-x 1 dhanu dhanu 0 Jan 22 23:03 file1
+
+ Question 2 
+
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 22 23:03 file2
+-rw-r--r-- 1 dhanu dhanu 0 Jan 22 23:03 file2
+
+ Question 3 
+
+file1_link
+
+ Question 4 
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+dhanu       2326  0.0  0.0 244336  5888 tty2     Ssl+ 14:39   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+dhanu       2337  0.0  0.1 306876 16384 tty2     Sl+  14:39   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+dhanu       7757  0.0  0.0  19692  4992 pts/0    Ss   23:03   0:00 bash
+dhanu       7763  0.0  0.0   2800  1664 pts/0    S+   23:03   0:00 sh command.sh
+dhanu       7777  0.0  0.0  22284  4608 pts/0    R+   23:03   0:00 ps -au
+
+ Question 5 
+
+Output of this Question is saved to the Q5_output.txt file 
+
+
+ The unwanted folders was deleted successfully
+
+ Thank you
+
