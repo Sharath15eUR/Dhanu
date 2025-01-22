@@ -1,0 +1,44 @@
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ touch file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ls -lrt file1
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 00:32 file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ chmod a+x file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ls -lrt file1
+-rwxrwxr-x 1 dhanu dhanu 0 Jan 23 00:32 file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ 
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ touch file2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ls -lrt file2
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 00:33 file2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ chmod g-w file2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ls -lrt file2
+-rw-r--r-- 1 dhanu dhanu 0 Jan 23 00:33 file2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ 
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ 
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ mkdir dir1 dir2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ touch dir1/file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ln -s dir1/file1 dir2/file_link
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ cd dir2
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1/dir2$ ls
+file_link
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1/dir2$ ls-lrt
+ls-lrt: command not found
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1/dir2$ ls -lrt
+total 0
+lrwxrwxrwx 1 dhanu dhanu 10 Jan 23 00:34 file_link -> dir1/file1
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1/dir2$ cd ..
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ps -au
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+dhanu       1865  0.0  0.0 244336  6144 tty2     Ssl+ Jan22   0:00 /usr/libexec/
+dhanu       1871  0.0  0.1 306876 16512 tty2     Sl+  Jan22   0:00 /usr/libexec/
+dhanu       8890  0.0  0.0  19692  5248 pts/0    Ss   00:31   0:00 bash
+dhanu       9025  0.0  0.0  22416  4608 pts/0    R+   00:34   0:00 ps -au
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ mkdir dir
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ touch dir/file1 dir/file2 dir/file3
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ ls -lt dir > Q5_output.txt
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ cat Q5_output.txt
+total 0
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 00:35 file1
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 00:35 file2
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 00:35 file3
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 1$ 
+
+
