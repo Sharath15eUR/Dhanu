@@ -1,6 +1,6 @@
 # Assignment Submission  
 
-## Repository Structure 
+## Executable Structure
 
  ### **module_1**
  
