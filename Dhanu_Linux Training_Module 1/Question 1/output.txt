@@ -1,0 +1,2 @@
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:07 file1
+-rwxrwxr-x 1 dhanu dhanu 0 Jan 23 14:07 file1

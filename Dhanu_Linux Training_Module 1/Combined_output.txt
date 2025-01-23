@@ -1,0 +1,38 @@
+
+ Question 1 
+
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:19 file1
+-rwxrwxr-x 1 dhanu dhanu 0 Jan 23 14:19 file1
+
+ Question 2 
+
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:19 file2
+-rw-r--r-- 1 dhanu dhanu 0 Jan 23 14:19 file2
+
+ Question 3 
+
+file1_link
+
+ Question 4 
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+dhanu       1748  0.0  0.0 244336  6016 tty2     Ssl+ 14:02   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+dhanu       1756  0.0  0.1 306876 16512 tty2     Sl+  14:02   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+dhanu       5656  0.0  0.0  19692  5248 pts/0    Ss+  14:13   0:00 bash
+dhanu       5710  0.0  0.0  19692  5248 pts/1    Ss+  14:15   0:00 bash
+dhanu       5859  0.0  0.0  19692  5248 pts/2    Ss+  14:18   0:00 bash
+dhanu       5947  0.0  0.0  19692  5248 pts/3    Ss   14:18   0:00 bash
+dhanu       5953  0.0  0.0   2800  1664 pts/3    S+   14:19   0:00 sh Combined_command.sh
+dhanu       5967  0.0  0.0  22420  4736 pts/3    R+   14:19   0:00 ps -au
+
+ Question 5 
+
+total 0
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:19 file1
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:19 file2
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:19 file3
+
+ The unwanted folders was deleted successfully
+
+ Thank you
+

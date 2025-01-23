@@ -1,0 +1,4 @@
+total 0
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:16 file1
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:16 file2
+-rw-rw-r-- 1 dhanu dhanu 0 Jan 23 14:16 file3
