@@ -1,0 +1,40 @@
+
+ Question 1 
+
+./3mb_file.txt
+./Question 1/3mb_file.txt
+./Question 1/6mb_file.txt
+./Question 1/4mb_file.txt
+
+ Question 2 
+
+# Database configuration 
+database_host = 127.0.0.1
+database_port = 3306
+database_user = root
+database_password = EmbedUr@2025
+
+#Server Settings
+server_address = 127.0.0.1:5000
+log_level = DEBUG
+
+#Email notification
+smtp_server = 127.0.0.1
+smtp_port = 25
+
+ Question 3 
+
+ERROR: Unable to connect to the database.
+ERROR: Failed to fetch data from API endpoint '/users'.
+ERROR: Missing required parameter in the request.
+
+ Question 4 
+
+
+ Question 5 
+
+10.0.2.2
+enp0s3
+
+ Thank you
+

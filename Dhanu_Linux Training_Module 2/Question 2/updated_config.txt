@@ -1,0 +1,13 @@
+# Database configuration 
+database_host = 127.0.0.1
+database_port = 3306
+database_user = root
+database_password = EmbedUr@2025
+
+#Server Settings
+server_address = 127.0.0.1:5000
+log_level = DEBUG
+
+#Email notification
+smtp_server = 127.0.0.1
+smtp_port = 25

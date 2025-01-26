@@ -1,0 +1,13 @@
+# Database configuration 
+database_host = localhost
+database_port = 3306
+database_user = root
+database_password = EmbedUr@2025
+
+#Server Settings
+server_address = localhost:5000
+log_level = DEBUG
+
+#Email notification
+smtp_server = localhost
+smtp_port = 25
