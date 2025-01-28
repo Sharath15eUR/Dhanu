@@ -1,0 +1,28 @@
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 3$ bash backup_manager.sh "." "/home/dhanu/backup/backup" ".txt"
+
+
+Total files found = 13
+File path 		 File Size
+dummy11.txt 	 4194370 
+dummy7.txt 	 4194370 
+dummy6.txt 	 4194370 
+dummy13.txt 	 5 
+dummy10.txt 	 4194370 
+dummy2.txt 	 1048591 
+dummy9.txt 	 4194370 
+dummy1.txt 	 1048591 
+dummy8.txt 	 4194370 
+dummy3.txt 	 1048591 
+dummy4.txt 	 2097184 
+dummy12.txt 	 1351 
+dummy5.txt 	 2097184 
+Starting Backup...
+
+Percentage Completed :91%%
+
+Generating backup_report.log
+
+log file generated successfully @ /home/dhanu/backup/backup
+
+Note : The files with same name is overwritten only if the file is older then the source file
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 3$ 
