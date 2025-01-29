@@ -25,7 +25,7 @@ fi
 
 declare -A files
 
-for i in $(find . -type f -name "*${File_ext}");
+for i in $(find "${Source_Dir}" -type f -name "*${File_ext}");
 do
 	files[$i]=$(stat -c "%s" $i)
 done
