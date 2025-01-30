@@ -1,0 +1,8 @@
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 4$ ./command.sh
+input file name with extension :dhanu.txt
+!!Invalid file or file seems to be empty!! try again 
+input file name with extension :input.txt
+output file name with extension :output.txt
+The output.txt file is ready to view
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 4$ 
+
