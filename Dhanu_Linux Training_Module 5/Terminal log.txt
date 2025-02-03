@@ -1,0 +1,21 @@
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ./command.sh --help
+Usage: ./command.sh [options]
+
+Options:
+  -d <directory>  Directory to search recursively.
+  -k <keyword>    Keyword to search for.
+  -f <file>       File to search directly.
+  --help          Display this help menu.
+
+Examples:
+  ./command.sh -d logs -k error      Recursively search 'logs' directory for 'error'.
+  ./command.sh -f script.sh -k TODO  Search 'script.sh' for 'TODO'.
+  ./command.sh --help             Display this help menu.
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ./command.sh -f "Newfile.txt" -k TODO
+Error: 'Newfile.txt' is not a valid file or directory.
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ./command.sh -f "New_file.txt" -k TODO
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ./command.sh -f "New_file.txt" -k Dhanu
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ./command.sh -f "New_file.txt" -k "Dhanu"
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ ^C
+dhanu@EmbedUR:~/Assignment/Dhanu_Linux Training_Module 5$ 
+
