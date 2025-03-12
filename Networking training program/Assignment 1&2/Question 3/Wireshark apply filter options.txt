@@ -1,0 +1,163 @@
+Wireshark Packet Filter Options
+
+Wireshark provides two primary types of filters:
+
+1. Capture Filters – Applied before packets are captured to limit the packets being recorded.
+2. Display Filters – Applied after capturing to refine and analyze the captured packets.
+
+
+
+
+Capture filters are set before starting the packet capture to limit the data collection.
+
+Basic Capture Filters
+ Capture only TCP packets:
+  
+  tcp
+  
+ Capture only UDP packets:
+  
+  udp
+  
+ Capture only ICMP (ping) traffic:
+  
+  icmp
+  
+ Capture traffic to/from a specific IP:
+  
+  host 192.168.1.1
+  
+ Capture packets from a specific subnet:
+  
+  net 192.168.1.0/24
+  
+ Capture packets to/from a specific port (e.g., HTTP  port 80):
+  
+  port 80
+  
+ Capture packets from a specific MAC address:
+  
+  ether host 00:1A:2B:3C:4D:5E
+  
+
+ Advanced Capture Filters
+ Capture only packets from a specific source:
+  
+  src host 192.168.1.1
+  
+ Capture only packets to a specific destination:
+  
+  dst host 192.168.1.100
+  
+ Capture packets using multiple conditions (AND, OR, NOT):
+  
+  host 192.168.1.1 and port 22
+  
+  
+  net 192.168.1.0/24 or port 443
+  
+  
+  not port 80
+  
+
+
+
+ 2. Display Filters (Uses Wireshark Display Filter Syntax)
+Display filters help refine packet analysis after capture.
+
+ Basic Display Filters
+ Show only TCP traffic:
+  
+  tcp
+  
+ Show only UDP traffic:
+  
+  udp
+  
+ Show only ICMP packets:
+  
+  icmp
+  
+ Show packets from a specific IP:
+  
+  ip.src == 192.168.1.1
+  
+ Show packets to a specific IP:
+  
+  ip.dst == 192.168.1.100
+  
+ Show packets from a specific port:
+  
+  tcp.port == 443
+  
+
+ Advanced Display Filters
+ Show only HTTP traffic:
+  
+  http
+  
+ Show only DNS traffic:
+  
+  dns
+  
+ Show only ARP traffic:
+  
+  arp
+  
+ Show packets where TCP flags are set (e.g., SYN):
+  
+  tcp.flags.syn == 1
+  
+ Show packets with a payload greater than 100 bytes:
+  
+  frame.len > 100
+  
+ Filter packets using multiple conditions:
+  
+  (ip.src == 192.168.1.1) && (tcp.port == 80)
+  
+  
+  (tcp.flags.syn == 1) || (tcp.flags.fin == 1)
+  
+  
+  !(http || dns)
+  
+
+
+
+ 3. Practical Usage Scenarios
+ Debugging Network Issues: Use filters to isolate problematic traffic (e.g., highlatency packets, dropped connections).
+ Security Analysis: Identify suspicious activity like port scans, bruteforce attempts, or unusual traffic patterns.
+ Protocol Analysis: Capture specific protocols to analyze application behavior.
+
+ Example Use Cases
+1. Finding Slow HTTP Requests
+   
+   http && frame.time_delta > 2.0
+   
+2. Detecting Unencrypted Passwords in HTTP Traffic
+   
+   http contains "password"
+   
+3. Filtering Out Noisy Traffic
+   
+   !(arp || icmp || dns)
+   
+
+
+
+ 4. Saving and Applying Filters
+ Saving Filters: You can save frequently used filters in Wireshark for quick access.
+ Applying Filters: Use the filter bar in Wireshark to enter display filters and refine results in realtime.
+
+ Commandline Capture Using tshark
+Wireshark’s CLI tool `tshark` allows applying filters directly:
+bash
+  tshark i eth0 Y "http" w capture.pcap
+
+(Captures only HTTP traffic and saves it to a file.)
+
+
+
+
+

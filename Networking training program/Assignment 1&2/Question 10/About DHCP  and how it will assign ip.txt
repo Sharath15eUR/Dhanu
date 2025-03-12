@@ -1,0 +1,29 @@
+How a DHCP Server Assigns IP Addresses to Devices in a Network
+	A DHCP (Dynamic Host Configuration Protocol) server automatically assigns IP addresses and network configuration settings to devices in a network. 	This process ensures efficient IP management without manual configuration.
+
+	Steps of DHCP IP Address Assignment
+		1. DHCP Discovery (Client to Server)
+			When a device (client) connects to a network, it broadcasts a DHCPDISCOVER packet.
+			This packet is sent to the entire network (255.255.255.255) to find an available DHCP server.
+			The client does not have an IP address yet, so it uses 0.0.0.0 as the source IP.
+		2. DHCP Offer (Server to Client)
+			A DHCP server responds with a DHCPOFFER packet.
+			This includes:
+				An available IP address for the client.
+				The subnet mask.
+				The default gateway (router).
+				The DNS server IPs.
+				The lease duration (time the IP is valid).
+		3. DHCP Request (Client → Server)
+			The client sends a DHCPREQUEST packet to confirm acceptance of the offered IP address.
+			This request is broadcasted, ensuring all DHCP servers are aware of the selection.
+		4. DHCP Acknowledgment (Server → Client)
+			The DHCP server finalizes the process with a DHCPACK packet.
+			This confirms the assigned IP address and configuration.
+			The client is now able to communicate on the network.
+	Key Components of DHCP IP Assignment
+	
+		Lease Time: Duration the IP address is valid before renewal is needed.
+		Subnet Mask: Defines the network's size and range of IPs.
+		Default Gateway: The router that connects the network to other networks.
+		DNS Servers: Helps resolve domain names to IP addresses.

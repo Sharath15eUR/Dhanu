@@ -1,0 +1,65 @@
+Accessing a Remote System Using Different Tools
+	Remote access tools allow users to connect and control another system over a network. Common tools 	include VNC Viewer, AnyDesk, TeamViewer, and Remote Desktop Connection (RDP).
+
+1. VNC Viewer (Virtual Network Computing)
+	VNC Viewer is a remote access tool that allows users to control a system using a graphical 	interface.
+
+	Steps to Connect Using VNC Viewer:
+
+		Install VNC Server on the remote machine.
+		Install VNC Viewer on the local system.
+		Obtain the IP address of the remote machine.
+		Open VNC Viewer and enter the IP address.
+		Enter login credentials if required and connect.
+	Common Uses:
+		Remote administration
+		IT support and troubleshooting
+		Accessing files on another machine
+2. AnyDesk (support cross platform)
+	AnyDesk is a lightweight remote access tool that works across platforms with minimal 	latency.
+
+	Steps to Connect Using AnyDesk:
+
+		Install AnyDesk on both systems.
+		Open AnyDesk and note the address (ID) of the remote system.
+		Enter the remote address in the AnyDesk application.
+		Request access and wait for the remote user to accept.
+		Once accepted, control the remote system.
+	Common Uses:
+
+		Remote support and assistance
+		Secure file sharing
+		Controlling workstations remotely
+3. TeamViewer (support cross platform)
+	TeamViewer provides remote desktop access with additional features like file transfer and chat.
+
+	Steps to Connect Using TeamViewer:
+
+		Install TeamViewer on both devices.
+		Open TeamViewer and note the Partner ID and Password of the remote system.
+		On the local system, enter the Partner ID and click Connect.
+		Enter the password when prompted.
+		Gain control of the remote system.
+	Common Uses:
+
+		Business and IT support
+		Remote file access
+		Secure remote desktop sharing
+4. Remote Desktop Connection (RDP) (only for windows)
+	Remote Desktop Connection is a built-in Windows feature that allows users to access another Windows 	system.
+	
+	Steps to Connect Using RDP:
+
+		Enable Remote Desktop on the target machine.
+		Go to Settings > System > Remote Desktop and turn it on.
+		Find the IP address of the remote machine using the command:
+
+		Open Remote Desktop Connection (mstsc in Run).
+		Enter the IP address of the remote system and click Connect.
+		Enter the username and password when prompted.
+	Common Uses:
+
+		Accessing work computers remotely
+		Managing Windows servers
+		Secure remote administration
+

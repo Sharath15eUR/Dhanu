@@ -1,0 +1,52 @@
+Before diving into the explanation let's learn about why we didn't get any network in iwconfig in our VM machine (attached Screenshot). The reason
+behind it is that iwconfig will only scan the wireless interface. it will not scan the wired interface. whereas the ifconfig will scan the wired and wireless interfaces.
+
+
+1. Understanding iwconfig (Wireless Interfaces)
+The iwconfig command is used to display and configure wireless network interfaces.
+
+Basic Usage:
+
+iwconfig
+
+Output Example:
+
+wlan0     IEEE 802.11  ESSID:"MyWiFi"  
+          Mode:Managed  Frequency:2.437 GHz  Access Point: 12:34:56:78:90:AB   
+          Bit Rate=54 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off  
+          Power Management:off  
+          Link Quality=70/70  Signal level=-30 dBm  
+Key Parameters:
+	ESSID → The name of the connected WiFi network.
+	Mode → Managed (connected to an access point) or Ad-Hoc (peer-to-peer).
+	Frequency → The wireless channel being used.
+	Access Point → The MAC address of the router.
+	Bit Rate → The current transmission speed (e.g., 54 Mb/s).
+	Tx-Power → The transmission power of the interface.
+	Signal Level → Quality of the wireless signal.
+	Modify Wireless Interface Settings:
+	
+2. Understanding ifconfig (Wired and Wireless Interfaces)
+	The ifconfig command provides detailed information about all network interfaces, including IP addresses, MAC addresses, MTU, and speed.
+
+Basic Usage:
+
+ifconfig
+
+Output Example:
+
+eth0      Link encap:Ethernet  HWaddr 00:1A:2B:3C:4D:5E  
+          inet addr:192.168.1.100  Bcast:192.168.1.255  Mask:255.255.255.0  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1  
+          RX packets:1048576 errors:0 dropped:0 overruns:0 frame:0  
+          TX packets:524288 errors:0 dropped:0 overruns:0 carrier:0  
+          Collisions:0  txqueuelen:1000  
+          RX bytes:104857600 (100.0 MB)  TX bytes:52428800 (50.0 MB)  
+Key Parameters:
+	inet addr → The assigned IP address (e.g., 192.168.1.100).
+	HWaddr → The MAC address of the interface.
+	MTU → The Maximum Transmission Unit (default is 1500 bytes).
+	RX/TX packets → The number of received and transmitted packets.
+	Errors/Dropped → Indicates any network issues or packet loss.
+	txqueuelen → The length of the transmission queue.

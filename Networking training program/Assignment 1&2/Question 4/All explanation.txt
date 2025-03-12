@@ -1,0 +1,65 @@
+ifconfig : 
+ 	Key Parameters:
+
+		flags=4163<UP,BROADCAST,RUNNING,MULTICAST> → Interface is up and running.
+		mtu 1500 → Maximum Transmission Unit (packet size).
+		inet 192.168.1.10 → IPv4 address assigned to the interface.
+		netmask 255.255.255.0 → Subnet mask of the network.
+		broadcast 192.168.1.255 → Broadcast address of the network.
+		inet6 fe80::1a2b:3c4d:5e6f:7g8h → IPv6 address assigned.
+		ether 00:1A:2B:3C:4D:5E → MAC address of the interface.
+		txqueuelen 1000 → Transmit queue length (affects how much data can be queued for 		transmission).
+		RX packets / TX packets → Number of received/transmitted packets.
+		RX bytes / TX bytes → Data received/transmitted in bytes.
+	Common Options:
+
+		ifconfig -a → Show all interfaces (even if they are down).
+		ifconfig eth0 up → Enable an interface.
+		ifconfig eth0 down → Disable an interface.
+		ifconfig eth0 192.168.1.100 netmask 255.255.255.0 → Assign an IP address.
+
+ping :
+
+  -4, --ipv4            use IPv4
+  -6, --ipv6            use IPv6
+  -c, --count=N         stop after sending N packets
+  -i, --interval=S      interval between packets (default: 1s)
+  -w, --timeout=N       stop after N seconds
+  -q, --quiet           do not show per-packet output
+  -p, --pattern=PATTERN contents of padding byte (hex)
+  -s, --size=SIZE       packet size (default: 56 bytes)
+  -t, --ttl=N           set Time To Live
+  -v, --verbose         verbose output
+  -h, --help            display this help and exit
+
+Options valid for --echo request:
+
+  -C, --echo-reply      expect an ICMP Echo Reply (default)
+  -F, --flowlabel=LABEL set flow label for IPv6 packets
+  -I, --interface=IFACE source interface
+  -M, --mark=VALUE      tag packets with mark for firewalling
+  -N, --nodeinfo=TYPE   send ICMPv6 Node Information Queries
+
+
+Arp:
+
+ Usage: arp [-vn] [-H type] -a [hostname]
+       arp [-v] [-i if] -d hostname [pub]
+       arp [-v] [-i if] -s hostname hw_addr [temp]
+       arp [-v] [-i if] -s hostname hw_addr [netmask nm] pub
+       arp [-v] [-i if] -Ds hostname ifname [netmask nm] pub
+
+MODES:
+  -a                          display (all) hosts in alternative (BSD) style
+  -d hostname                 delete a hostname
+  -s hostname hw_addr         manually set a host’s hardware address
+  -Ds hostname ifname         use ifname’s MAC address for hostname (proxy ARP)
+
+OPTIONS:
+  -v, --verbose               be verbose
+  -n, --numeric               don’t resolve names
+  -i, --device if             specify network interface
+  -H type                     set hardware type (default: ether)
+  -p, --protocol family       set protocol family
+  -f, --file filename         read from file instead of modifying ARP table
+  -h, --help                  display this help and exit
